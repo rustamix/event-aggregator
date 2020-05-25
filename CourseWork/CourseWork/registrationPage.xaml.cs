@@ -24,7 +24,7 @@ namespace CourseWork
         }
         private void confirmButton_Click(object sender, RoutedEventArgs e)
         {
-            if (!IsDataCorrect(usernameTextBox.Text))
+            if (!Globals.IsUsernameValid(usernameTextBox.Text) || usernameTextBox.Text == "")
                 informLabel.Content = "Incorrect username!";
             else if (IsUsernameUsed(usernameTextBox.Text))
                 informLabel.Content = "Username is already used!";

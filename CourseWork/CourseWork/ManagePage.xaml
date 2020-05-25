@@ -22,28 +22,30 @@
                     <RowDefinition/>
                     <RowDefinition/>
                     <RowDefinition/>
+                    <RowDefinition/>
                 </Grid.RowDefinitions>
                 <Grid x:Name="personalSettings" MouseLeftButtonUp="personalSettings_MouseLeftButtonUp">
                     <Grid.RowDefinitions>
                         <RowDefinition/>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-                    <Label Content="Personal Settings" FontFamily="Leelawadee" FontWeight="Bold" Foreground="#FF76A9FA" Padding="5,5,5,3" VerticalContentAlignment="Bottom"/>
-                    <Label Content="Customize your experience" Grid.Row="1" Foreground="#FF76A9FA" FontFamily="Leelawadee" Padding="5,0,5,5" FontSize="10"/>
+                    <Label x:Name="personalSettingsLabel" Content="Personal Settings" FontFamily="Leelawadee" FontWeight="Bold" Foreground="#FF76A9FA" Padding="5,5,5,3" VerticalContentAlignment="Bottom"/>
+                    <Label x:Name="personalSettingsMiniLabel" Content="Customize your experience" Grid.Row="1" Foreground="#FF76A9FA" FontFamily="Leelawadee" Padding="5,0,5,5" FontSize="10"/>
                 </Grid>
-                <Grid Grid.Row="1">
+                <Grid x:Name="myEventsGrid" Grid.Row="1" MouseLeftButtonUp="myEventsGrid_MouseLeftButtonUp">
                     <Grid.RowDefinitions>
                         <RowDefinition/>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-                    <Label Content="Label" FontFamily="Leelawadee" FontWeight="Bold" FontSize="14"/>
+                    <Label x:Name="myEventsLabel" Content="My Events" FontFamily="Leelawadee" FontWeight="Bold" Padding="5,5,5,3" VerticalContentAlignment="Bottom"/>
+                    <Label x:Name="MyEventsMiniLabel" Content="Manage your time" Grid.Row="1" Padding="5,0,5,5" Foreground="Gray" FontFamily="Leelawadee" FontSize="10"/>
                 </Grid>
-                <Grid Grid.Row="2">
+                <Grid x:Name="deleteAccountGrid" Grid.Row="2" MouseLeftButtonUp="deleteAccountGrid_MouseLeftButtonUp">
                     <Grid.RowDefinitions>
                         <RowDefinition/>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-                    <Label Content="Label" FontFamily="Leelawadee" FontWeight="Bold" FontSize="14"/>
+                    <Label Content="Delete Account" FontFamily="Leelawadee" FontWeight="Bold" Foreground="#FFF14F4F" Padding="5,5,5,3" VerticalContentAlignment="Bottom"/>
                 </Grid>
                 <Grid x:Name="selectorGrid" Panel.ZIndex="-1" Margin="-20,0,-20,0">
                     <Grid.ColumnDefinitions>
@@ -59,9 +61,9 @@
                 </Grid>
             </Grid>
         </Border>
-        <Border Grid.Column="1" CornerRadius="10,10,10,10" Background="White" Margin="10,0,0,0">
+        <Border Grid.Column="1" CornerRadius="10,10,10,10" Background="White" Margin="20,0,0,0">
             <Grid Margin="20,20,20,20">
-                <Frame x:Name="manageFrame" Content="" NavigationUIVisibility="Hidden"/>
+                <Frame x:Name="manageFrame" Content="" NavigationUIVisibility="Hidden" Source="/PersonalSettings.xaml"/>
             </Grid>
         </Border>
 

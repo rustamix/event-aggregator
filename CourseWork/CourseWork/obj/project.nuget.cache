@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9jKE21x+L+kEONDiA3GNFLDvtM5OZ82PUQvWRiwiqQ9bg8g5C8q2A88skMP1bZFJOupd98XtmpeO6rMbqBE0XQ==",
+  "dgSpecHash": "IpFuV7XsW70aJPSyrQwQJK7thoKU0vTmcxUf+Fb1hTeAVfQjuAFZA8c08Ng37HOW9fjKStHbqu4X3TFamJS4pA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Max\\Documents\\CourseWork\\CourseWork\\CourseWork.csproj",
+  "projectFilePath": "C:\\Users\\Max\\Documents\\Github\\CourseApp\\CourseWork\\CourseWork\\CourseWork.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Max\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Max\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

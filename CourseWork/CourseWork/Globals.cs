@@ -38,5 +38,12 @@ namespace CourseWork
                 }
             }
         }
+        public static bool IsUsernameValid(string someString)
+        {
+            foreach (char ch in someString.ToLower())
+                if (!((ch >= 'a' && ch <= 'z') || (int.TryParse(ch.ToString(), out int i))))
+                    return false;
+            return true;
+        }
     }
 }

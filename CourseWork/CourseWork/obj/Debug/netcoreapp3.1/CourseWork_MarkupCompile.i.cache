@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Max\Documents\CourseWork\CourseWork\obj\Debug\netcoreapp3.1\
+C:\Users\Max\Documents\Github\CourseApp\CourseWork\CourseWork\obj\Debug\netcoreapp3.1\
 CourseWork
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-C:\Users\Max\Documents\CourseWork\CourseWork\App.xaml
-11-1739906770
+C:\Users\Max\Documents\Github\CourseApp\CourseWork\CourseWork\App.xaml
+122070493555
 
-20-221517230
+21430116061
 2172021325155
-AddEventPage.xaml;EntryWindow.xaml;EventOverviewPage.xaml;LoginPage.xaml;MainPage.xaml;MainWindow.xaml;ManagePage.xaml;PersonalSettings.xaml;ProfilePage.xaml;ReceivedRequests.xaml;registrationPage.xaml;
+AddEventPage.xaml;EntryWindow.xaml;EventOverviewPage.xaml;LoginPage.xaml;MainPage.xaml;MainWindow.xaml;ManagePage.xaml;MyEvents.xaml;PersonalSettings.xaml;ProfilePage.xaml;ReceivedRequests.xaml;registrationPage.xaml;
 
 False
 

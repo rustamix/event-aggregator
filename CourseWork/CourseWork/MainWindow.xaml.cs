@@ -42,5 +42,11 @@ namespace CourseWork
             Grid.SetRow(selectorGrid, Grid.GetRow(requestsLabel));
             frame.Navigate(new ReceivedRequests());
         }
+
+        private void manageLabel_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            Grid.SetRow(selectorGrid, Grid.GetRow(manageLabel));
+            Globals.mainFrame.Navigate(new ManagePage());
+        }
     }
 }

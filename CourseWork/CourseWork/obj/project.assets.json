@@ -1558,11 +1558,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Max\\Documents\\CourseWork\\CourseWork\\CourseWork.csproj",
+      "projectUniqueName": "C:\\Users\\Max\\Documents\\Github\\CourseApp\\CourseWork\\CourseWork\\CourseWork.csproj",
       "projectName": "CourseWork",
-      "projectPath": "C:\\Users\\Max\\Documents\\CourseWork\\CourseWork\\CourseWork.csproj",
+      "projectPath": "C:\\Users\\Max\\Documents\\Github\\CourseApp\\CourseWork\\CourseWork\\CourseWork.csproj",
       "packagesPath": "C:\\Users\\Max\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Max\\Documents\\CourseWork\\CourseWork\\obj\\",
+      "outputPath": "C:\\Users\\Max\\Documents\\Github\\CourseApp\\CourseWork\\CourseWork\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Max\\AppData\\Roaming\\NuGet\\NuGet.Config",

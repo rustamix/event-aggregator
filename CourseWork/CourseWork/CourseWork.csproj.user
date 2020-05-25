@@ -27,6 +27,9 @@
     <Compile Update="ManagePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="MyEvents.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="PersonalSettings.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -60,6 +63,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ManagePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MyEvents.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="PersonalSettings.xaml">

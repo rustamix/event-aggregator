@@ -32,7 +32,7 @@
                 <ColumnDefinition Width="60"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Label VerticalContentAlignment="Center" x:Name="myEventAgentLabel" HorizontalContentAlignment="Left" Foreground="White" Content="My Event Agent" Grid.ColumnSpan="2" Margin="15,20,0,0"/>
+            <Label VerticalContentAlignment="Center" x:Name="myEventAgentLabel" HorizontalContentAlignment="Left" Foreground="White" Content="My Event Agent" Grid.ColumnSpan="2" Margin="15,20,0,0" FontWeight="Bold" FontSize="14"/>
             <Label x:Name="requestsLabel"
     VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Foreground="White" Content="Received requests" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Stretch" Padding="5,0,5,5" Panel.ZIndex="0" MouseLeftButtonUp="requestsLabel_MouseLeftButtonUp"/>
             <Label x:Name="addEventLabel" MouseLeftButtonUp="addEventLabel_MouseLeftButtonUp" Foreground="White" Content="Add event" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Stretch" Padding="5,0,5,5" VerticalContentAlignment="Center" HorizontalContentAlignment="Left"/>
@@ -50,7 +50,7 @@
                 <Rectangle Fill="#FF76A9FA" Width="3"/>
             </Grid>
             <Label x:Name="upcomingEventsLabel" Content="Upcoming events" Grid.Row="2" Grid.Column="1" Foreground="White" VerticalContentAlignment="Center" MouseLeftButtonUp="upcomingEventsLabel_MouseLeftButtonUp"/>
-            <Label x:Name="manageLabel" Content="Manage" Grid.Row="5" Grid.Column="1" Foreground="White" VerticalAlignment="Stretch" VerticalContentAlignment="Center"/>
+            <Label x:Name="manageLabel" Content="Manage" Grid.Row="5" Grid.Column="1" Foreground="White" VerticalAlignment="Stretch" VerticalContentAlignment="Center" MouseLeftButtonUp="manageLabel_MouseLeftButtonUp"/>
             <Image Grid.Row="2" Width="30" Source="/Images/upcomingEvents.png"/>
             <Image Grid.Row="3" Width="30" Source="/Images/addEvent.png"/>
             <Image Grid.Row="4" Width="30" Stretch="Uniform" Source="/Images/requests.png"/>

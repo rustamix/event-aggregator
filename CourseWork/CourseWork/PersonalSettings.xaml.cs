@@ -1,15 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using Microsoft.Win32;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace CourseWork
 {
@@ -21,6 +15,27 @@ namespace CourseWork
         public PersonalSettings()
         {
             InitializeComponent();
+            avatar.Source = (BitmapSource)new ImageSourceConverter().ConvertFrom(Globals.currentUser.Avatar);
+        }
+
+        private void browseButton_Click(object sender, RoutedEventArgs e)
+        {
+                OpenFileDialog ofdPicture = new OpenFileDialog();
+                ofdPicture.Filter =
+                    "Image files|*.bmp;*.jpg;*.gif;*.png;*.tif|All files|*.*";
+                ofdPicture.FilterIndex = 1;
+                if (ofdPicture.ShowDialog() == true)
+                    avatar.Source = new BitmapImage(new Uri(ofdPicture.FileName));
+        }
+
+        private void saveChangesButton_Click(object sender, RoutedEventArgs e)
+        {
+            using (UserContext context = new UserContext()) {
+                if (!Globals.IsUsernameValid(usernameTextBox.Text) && usernameTextBox.Text != "")
+                    informLabel.Content = "Incorrect username!";
+                else
+                    context.Users.Find();
+            }
         }
     }
 }
