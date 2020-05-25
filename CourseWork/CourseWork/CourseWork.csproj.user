@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ShowAllFiles>false</ShowAllFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AddEventPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EntryWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EventOverviewPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LoginPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MainPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ManagePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PersonalSettings.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ProfilePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ReceivedRequests.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="registrationPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AddEventPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EntryWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EventOverviewPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LoginPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ManagePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PersonalSettings.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ProfilePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ReceivedRequests.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="registrationPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

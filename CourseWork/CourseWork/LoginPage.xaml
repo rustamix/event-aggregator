@@ -1,0 +1,51 @@
+﻿<Page x:Name="loginPage" x:Class="CourseWork.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CourseWork"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="LoginPage" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Stretch">
+
+        <Border Background="White" CornerRadius="10,10,10,10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Content="Login" FontFamily="Leelawadee" FontWeight="Bold" Background="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="40,20,40,0" FontSize="20" Padding="0,5,5,5"/>
+                <Label x:Name="informLabel" Content="" FontFamily="Leelawadee" Foreground="#FFA24848" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="40,0,40,0"/>
+                <Label Content="Username" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="Leelawadee" Grid.Row="2" Foreground="Gray" Margin="40,0,40,0" Padding="0,5,5,5" FontSize="10"/>
+                <Label Content="Password" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="Leelawadee" Grid.Row="4" Foreground="Gray" Margin="40,0,40,0" Padding="0,5,5,5" FontSize="10"/>
+                <Border BorderThickness="1" BorderBrush="Gray" CornerRadius="2.5,2.5,2.5,2.5" Margin="40,0,40,20" Grid.Row="3" HorizontalAlignment="Left" Width="200" Height="30">
+                    <TextBox x:Name="usernameTextBox" TextWrapping="Wrap" VerticalAlignment="Stretch" FontFamily="Comic Sans MS" FontSize="14" BorderBrush="{x:Null}" VerticalContentAlignment="Center"/>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="Gray" CornerRadius="2.5,2.5,2.5,2.5" Margin="40,0,40,20" Grid.Row="5" Height="30" Width="200">
+                    <PasswordBox x:Name="passwordBox" FontFamily="Comic Sans MS" FontSize="14" BorderBrush="{x:Null}" VerticalContentAlignment="Center"/>
+                </Border>
+                <Border Background="#FF76A9FA" CornerRadius="5,5,5,5" Grid.Row="6" Height="30" Width="200" Margin="0,0,0,5" Visibility="Visible">
+                    <Button x:Name="confirmButton" Content="Confirm" Background="{x:Null}" Click="confirmButton_Click" FontFamily="Leelawadee" Foreground="White" BorderBrush="{x:Null}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                </Border>
+                <Border Background="#FF76A9FA" CornerRadius="5,5,5,5" Grid.Row="7" Height="30" Width="200" Margin="0,0,0,20">
+                    <Button x:Name="toRegistrationButton" Content="Sign Up" FontFamily="Leelawadee" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}" Click="toRegistrationButton_Click" VerticalContentAlignment="Center"/>
+                </Border>
+                <Border Background="#FF76A9FA" CornerRadius="5,5,5,5" Grid.Row="8" Height="30" Width="200" Margin="0,0,0,25">
+                    <Button Content="Exit" FontFamily="Leelawadee" Click="ExitButton_Click" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}"/>
+                </Border>
+
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

@@ -1,0 +1,75 @@
+﻿<Page x:Class="CourseWork.AddEventPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CourseWork"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddEventPage">
+
+    <Border BorderBrush="Black" CornerRadius="10,10,10,10" Background="White" Margin="15,15,15,15">
+
+        <Grid Margin="0,0,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label x:Name="informLabel" Content="" Foreground="#FFAE4F4F" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <Grid ScrollViewer.VerticalScrollBarVisibility="Visible" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Title:" Foreground="Black" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,0,0,10"/>
+                    <TextBox x:Name="titleTextBox" Grid.Column="1" Margin="0,0,0,10" TextWrapping="NoWrap" VerticalAlignment="Center" FontFamily="Comic Sans MS" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Height="25"/>
+                    <Label Content="Type:" Grid.Row="1" Foreground="Black" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,0,0,10"/>
+                    <Label Content="Description:" Grid.Row="4" Foreground="Black" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,0,0,10"/>
+                    <TextBox x:Name="descriptionTextBox" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Stretch" FontFamily="Leelawadee" Grid.RowSpan="2" VerticalScrollBarVisibility="Auto" VerticalContentAlignment="Center"/>
+                    <ComboBox x:Name="typeComboBox" Margin="0,0,0,10" VerticalAlignment="Center" Grid.Row="1" IsEditable="True" GotFocus="typeComboBox_GotFocus" IsDropDownOpen="True" LostFocus="typeComboBox_LostFocus" Grid.Column="1" Height="25" VerticalContentAlignment="Center">
+                        <TextBlock>Education</TextBlock>
+                        <TextBlock>Informal</TextBlock>
+                        <TextBlock>Party</TextBlock>
+                        <TextBlock><Run Text="Sport"/>Sport</TextBlock>
+                    </ComboBox>
+                    <DatePicker x:Name="eventDatePicker" HorizontalAlignment="Stretch" Margin="0,0,0,10" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" FirstDayOfWeek="Sunday" Height="25"/>
+                    <Label Content="Date:" Grid.Row="2" HorizontalAlignment="Right" FontWeight="Bold" Margin="0,0,0,10"/>
+                    <Label Content="Age limit:" Grid.Row="3" HorizontalAlignment="Right" FontWeight="Bold" Margin="0,0,0,10"/>
+                    <ComboBox x:Name="eighteenYearsRequiredComboBox" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1" Focusable="False" Margin="0,0,0,10" Height="25" VerticalContentAlignment="Center">
+                        <TextBlock>None</TextBlock>
+                        <TextBlock>Adults only(18+)</TextBlock>
+                    </ComboBox>
+                    <Border Grid.Row="6" Grid.Column="1" CornerRadius="2.5,2.5,2.5,2.5" Background="#FF76A9FA" Margin="0,10,0,0" Height="25" Width="200">
+                        <Button x:Name="confirmButton" Content="Confirm" FontFamily="Leelawadee" FontWeight="Normal" Click="confirmButton_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Padding="0,0,0,0"/>
+                    </Border>
+                </Grid>
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="eventImage" Width="100" Margin="15,20,15,5" Source="/Images/logo.png"/>
+                <Button x:Name="browseButton" Content="Browse" FontFamily="Comic Sans MS" Click="browseButton_Click" HorizontalAlignment="Right" VerticalAlignment="Top" Width="100" Grid.Row="1" Margin="0,0,15,0" Background="#FF76A9FA" Foreground="White" BorderBrush="{x:Null}"/>
+            </Grid>
+
+        </Grid>
+    </Border>
+</Page>

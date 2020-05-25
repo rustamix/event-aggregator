@@ -1,0 +1,47 @@
+﻿<Page x:Class="CourseWork.ProfilePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CourseWork"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ProfilePage">
+
+    <Grid Margin="20,20,20,20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Border Background="White" CornerRadius="10,10,10,10" Margin="0,0,10,0">
+            <Grid x:Name="profileGrid" Margin="20,20,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image x:Name="avatarImage" Grid.RowSpan="2" Source="/iconfinder_Customize_user_profile_Account_man_1_4484738.png" Width="100" Height="100"/>
+                <Label x:Name="usernameLabel" Content="Username" Grid.Column="1" FontFamily="Leelawadee" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20"/>
+                <Label x:Name="amountOfVotersLabel" Content="num" Grid.Column="2" Grid.Row="1" FontFamily="Leelawadee" VerticalContentAlignment="Bottom" Padding="0,5,5,5"/>
+            </Grid>
+        </Border>
+        <Border Grid.Column="1" Background="White" CornerRadius="10,10,10,10">
+            <Grid x:Name="eventListGrid" Margin="20,20,20,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label x:Name="eventListLabel" Content="Label" FontFamily="Leelawadee" FontSize="20" FontWeight="Bold"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>
