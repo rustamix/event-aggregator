@@ -1,2 +1,1 @@
-# CourseApp
-Курсовая работа
+# Event aggregator (final work)
